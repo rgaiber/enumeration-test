@@ -12,8 +12,9 @@ namespace IEnumerablePOC
         static void Main(string[] args)
         {
             sw = new Stopwatch();
+            IEnumerable<SampleObject> data2 = SetupTest();
+            TestWithSingleEnumeration(data2);
             IEnumerable<SampleObject> data = SetupTest();
-            TestWithSingleEnumeration(data);
             TestWithDoubleEnumeration(data);
         }
 
